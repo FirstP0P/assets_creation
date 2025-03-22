@@ -15,7 +15,7 @@ const Slider = () => {
   ];
 
   const [currentPosition, setCurrentPosition] = useState(0);
-  const imageWidth = 200;
+  const imageWidth = 192;
   const totalImages = 10;
   const visibleImages = 5;
   const totalWidth = imageWidth * totalImages;
@@ -38,13 +38,13 @@ const Slider = () => {
   };
 
   return (
-    <div className="sliderContainer relative bg-red-500 w-[1000px] h-[200px] py-[16px] overflow-hidden">
+    <div className="sliderContainer relative bg-red-500 w-[960px] h-[192px] py-[16px] overflow-hidden">
       <div
-        className="imagesContainer flex h-full w-[2000px] transition-transform duration-500 ease-in-out"
+        className="imagesContainer flex h-full w-[1920px] transition-transform duration-500 ease-in-out"
         style={{ transform: `translateX(${currentPosition}px)` }}
       >
         {images.map((src, index) => (
-          <img key={index} src={src} alt={""} className="w-[200px] h-full" />
+          <img key={index} src={src} alt={""} className="w-[192px] h-full" />
         ))}
       </div>
       <button>
