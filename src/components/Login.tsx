@@ -1,4 +1,3 @@
-// src/Signup.tsx
 import React, { useState, FormEvent } from "react";
 import { signUp } from "../../firebase";
 
